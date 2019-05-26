@@ -5,7 +5,7 @@ namespace PHPUtils\SymfonyConsolePlugin;
 use Symfony\Component\Console\CommandLoader\FactoryCommandLoader;
 use Symfony\Component\Console\Application;
 
-abstract class ConsolePluginLoader
+abstract class ApplicationPluginLoader
 {
 
     public static $commandBindings = [];
@@ -23,7 +23,6 @@ abstract class ConsolePluginLoader
         }
         $loader = new FactoryCommandLoader($factories);
         $application->setCommandLoader($loader);
-        static::setBound();
     }
 
 }

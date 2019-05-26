@@ -13,5 +13,10 @@
             "name": "Garett Robson",
             "email": "info@garettrobson.co.uk"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "PHPUtils\\": "src/PHPUtils/"
+        }
+    }
 }
