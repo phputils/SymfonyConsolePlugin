@@ -1,0 +1,17 @@
+{
+    "name": "phputils/symfony-console-plugin",
+    "description": "Provides a framework for offering libraries a way to modify symfony applications in a project.",
+    "type": "library",
+    "require": {
+        "symfony/console": "^4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1"
+    },
+    "authors": [
+        {
+            "name": "Garett Robson",
+            "email": "info@garettrobson.co.uk"
+        }
+    ]
+}
