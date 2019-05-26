@@ -1,11 +1,11 @@
 <?php
 
-namespace PHPUtils\Plugin;
+namespace PHPUtils\SymfonyConsolePlugin;
 
 use Symfony\Component\Console\CommandLoader\FactoryCommandLoader;
 use Symfony\Component\Console\Application;
 
-abstract class consolePluginLoader
+abstract class ConsolePluginLoader
 {
 
     public static $commandBindings = [];
