@@ -20,14 +20,17 @@ final class ApplicationPluginLoaderTest extends TestCase
     public function testLoadingApplicationCommand(): void
     {
         // create application
-        $application = new Application();
+        $application = new Application('Test Application','0.0');
         // register command
         ApplicationPluginLoader::registerCommand('test:command',"TestCommand");
         // bind command
         ApplicationPluginLoader::bindCommands($application);
+        // get the command out by name
+        $command = $application->get('test:command');
+        $this->assertInstanceOf(TestCommand::class, $command);
     }
 }
 
 class TestCommand extends Command{
-
+    protected static $defaultName = 'test:command';
 }
